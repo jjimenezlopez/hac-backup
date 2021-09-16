@@ -1,0 +1,10 @@
+# Home Assistant Container Backup | hac-backup
+
+## Environment Variables
+ - `CRON_FREQUENCY`: Frequency for the backup in cron mode, for example: 0 1 * * * for doing a backup every day at 1 AM. See https://crontab.guru/ for more advanced usage.
+ - `INCLUDE_DB`: Wheter or not include the database in the backup. Values are: true or false.
+ - `DAYS_TO_KEEP`: Days to keep backups. Set it to 0 to keep them forever.
+
+## Paths
+ - `/config`: Home Assistant config directory.
+ - `/backups`: Backups directory. You can, for example, mount a USB disk or a smb/nfs volume.
