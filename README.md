@@ -2,6 +2,8 @@
 
 **hac-backup** is a very simple Docker container that will create a backup periodically of a Home Assistant's config directory. The `ha-backup.sh` script *doing all the job* comes from [this gist](https://gist.github.com/riemers/041c6a386a2eab95c55ba3ccaa10e7b0) from [riemers](https://github.com/riemers).
 
+**Note**: At the moment, the Docker's image is only available for ARM architecture (since I use it on a Raspberry Pi 4). If you're interested in any other architecture, you can build it yourself, or open an issue and I'll try.
+
 ## Usage
 The easiest way to use this is through docker compose. Here is a sample configuration:
 
