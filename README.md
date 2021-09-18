@@ -34,3 +34,4 @@ services:
  - `CRON_FREQUENCY`: Frequency for the backup in cron format, for example: 0 1 * * * for doing a backup every day at 1 AM. See https://crontab.guru/ for more advanced usage.
  - `INCLUDE_DB`: Wheter or not include the database in the backup. Values are: true or false.
  - `DAYS_TO_KEEP`: Days to keep backups. Set it to 0 to keep them forever.
+ - `POST_RUN`: Optional. Use it to run some command after the backup is completed. For example, I use it to ping healthchecks.io.
