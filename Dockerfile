@@ -4,7 +4,7 @@ FROM ubuntu:21.04
 MAINTAINER jjimenezlopez
 
 # Updating the packages and installing cron and vim editor if you later want to edit your script from inside your container.
-RUN apt-get update && apt-get install cron vim zip -y
+RUN apt-get update && apt-get install cron vim zip curl -y
 
 COPY ./scripts/generate_cronfile.sh /generate_cronfile.sh
 COPY ./scripts/ha-backup.sh /ha-backup.sh
